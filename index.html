@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+<title>Chandra Portfolio</title>
+
+</head>
+<body>
+    <canvas id="particleCanvas"></canvas>
+    <div class="cursor-glow"></div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#education">Education</a>
+<a href="#experience">Experience</a>
+<a href="#projects">Projects</a>
+<a href="#skills">Skills</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section id="home" class="hero">
+<div class="hero-container container">
+
+<div class="hero-left">
+<p class="small-text">Creative Portofolio</p>
+<h1 class="big-text">PORTOFOLIO</h1>
+<div class="custom-name">
+<span class="nama-kiri">CHANDRA SETIADI</span>
+<span class="nama-kanan-bawah">SEMBIRING</span>
+</div>
+
+<p class="title">Undergraduate Engineering Manufacturing</p>
+
+    <div class="teks-tambahan"> Manufacturing Engineering Student | Internship Technical Support Maintenance | Specialization Preventive and Corrective Maintenance | Design Engineer Autodesk Inventor 
+        | Lathe Operator | awardee scholarship Beasiswa Gudang Garam 2026</div>
+<div class="hero-info">
+
+<a href="tel:0895321238514" class="info-item">
+<i class="fas fa-phone"></i>
+<span>0895321238514</span>
+</a>
+
+<a href="https://www.linkedin.com/in/chandra-setiadi-sembiring-309343288" target="_blank" class="info-item">
+<i class="fab fa-linkedin"></i>
+<span>https://www.linkedin.com/in/chandra-setiadi-sembiring-309343288</span>
+</a>
+
+<a href="mailto:sembiringchandra6@gmail.com" class="info-item">
+<i class="fas fa-envelope"></i>
+<span>sembiringchandra6@gmail.com</span>
+</a>
+
+</div>
+</div>
+
+<div class="hero-image">
+<img src="image/foto-back.png" alt="foto-back">
+</div>
+
+</div>
+</section>
+
+<section id="about" class="hidden">
+    <div class="about-container container">
+        
+        <div class="about-text">
+            <h1>About Me</h1>
+            <p>Hi everyone... I am <strong>Chandra Setiadi Sembiring</strong>, I am a 7th-semester undergraduate student in the Applied Bachelor’s Program in Manufacturing Engineering Technology 
+              at the Faculty of Engineering, State University of Jakarta. I have gained experience as a Technical Support Maintenance Intern at PT. Sumi Asih, 
+              developing a solid understanding of machinery maintenance. I am proficient in reading and creating technical drawings using Autodesk Inventor and 
+              have practical experience operating lathes. Additionally, I have worked on a mini-conveyor automation project, which involved system design, assembly, and automated control.
+              I am keen to further develop my competencies in machinery maintenance and reliability to support equipment upkeep, enhance machine reliability, and ensure the smooth operation of production processes.</p>
+
+            <div class="about-stats">
+                <div class="stat-box">
+                    <span class="stat-number">2+</span>
+                    <span class="stat-label">Work Experience</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">4+</span>
+                    <span class="stat-label">Organization Experience</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">5+</span>
+                    <span class="stat-label">Projects</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-image">
+            <div class="arch-frame">
+                <img src="image/foto-back.png" alt="foto">
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="education" class="hidden">
+<div class="education-wrapper container">
+<h1 class="education-title">EDUCATION</h1>
+<div class="education-container">
+
+<div class="education-left">
+<h3>SMAN 8 TAMBUN SELATAN</h3>
+<p>High School</p>
+<p>2020 - 2023</p>
+</div>
+
+<div class="education-right">
+<h3>UNIVERSITAS NEGERI JAKARTA</h3>
+<p>Manufacturing Engineering Technology</p>
+<p>Semester 7 | 2023 - Present</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="experience" class="hidden">
+  <div class="experience-wrapper container">
+    <h1 class="section-title">EXPERIENCE JOURNEY</h1>
+
+    <div class="bento-grid">
+
+       <!-- ITEM 1: PT SUMI ASIH -->
+      <div class="bento-item">
+        <div class="card-top-info">
+          <div class="company-logo">
+            <img src="image/images.png" alt="PT. SUMI ASIH">
+          </div>
+          <div class="company-details">
+            <h3 class="company-name">PT. SUMI ASIH</h3>
+            <span class="company-period">AUG 2026 - PRESENT</span>
+          </div>
+        </div>
+        <div class="job-role role-prof">TECHNICAL SUPPORT MAINTENANCE</div>
+        <div class="btn-view-proof" onclick="openModal('sumi-modal')">
+          <span>Klik for Detail</span>
+          <i class="fas fa-info-circle"></i>
+        </div>
+      </div>
+
+
+      <!-- ITEM 1: PT EMER -->
+      <div class="bento-item">
+        <div class="card-top-info">
+          <div class="company-logo">
+            <img src="image/logo pt emerintek.jpeg" alt="PT EMERINTEK">
+          </div>
+          <div class="company-details">
+            <h3 class="company-name">PT EMER INOVASI TEKNOLOGI</h3>
+            <span class="company-period">Feb 2026 - Mar 2026</span>
+          </div>
+        </div>
+        <div class="job-role role-prof">Video Editor Intern</div>
+        <div class="btn-view-proof" onclick="openModal('emer-modal')">
+          <span>Klik for Detail</span>
+          <i class="fas fa-info-circle"></i>
+        </div>
+      </div>
+
+
+      <!-- ITEM 3: BPM FT (Ketua) -->
+      <div class="bento-item">
+        <div class="card-top-info">
+          <div class="company-logo">
+            <img src="image/logo_bpm-remove.png" alt="BPM FT">
+          </div>
+          <div class="company-details">
+            <h3 class="company-name">BADAN PERWAKILAN MAHASISWA FAKULTAS TEKNIK</h3>
+            <span class="company-period">Feb 2025 - Feb 2026</span>
+          </div>
+        </div>
+        <div class="job-role role-org-leader">Ketua Badan Kaderisasi</div>
+        <div class="btn-view-proof" onclick="openModal('bpm-kaderisasi-modal')">
+          <span>Klik for Detail</span>
+          <i class="fas fa-info-circle"></i>
+        </div>
+      </div>
+
+      <!-- ITEM 4: BPM FT (Staff) -->
+      <div class="bento-item">
+        <div class="card-top-info">
+          <div class="company-logo">
+             <img src="image/logo_bpm-remove.png" alt="BPM FT">
+          </div>
+          <div class="company-details">
+            <h3 class="company-name">BADAN PERWAKILAN MAHASISWA FAKULTAS TEKNIK</h3>
+            <span class="company-period">Januari 2024 - Feb 2026</span>
+          </div>
+        </div>
+        <div class="job-role role-org-leader">Staff Komisi Pengawasan</div>
+        <div class="btn-view-proof" onclick="openModal('bpm-staff-modal')">
+          <span>Klik for Detail</span>
+          <i class="fas fa-info-circle"></i>
+        </div>
+      </div>
+
+      <!-- ITEM 5: BPM FT (Koordinator TIPE) -->
+      <div class="bento-item">
+        <div class="card-top-info">
+            <div class="company-logo">
+                <img src="image/logo_bpm-remove.png" alt="BPM FT">
+                </div>
+          <div class="company-details">
+            <h3 class="company-name">BADAN PERWAKILAN MAHASISWA FAKULTAS TEKNIK</h3>
+            <span class="company-period">Jul 2025 - Aug 2025</span>
+          </div>
+        </div>
+        <div class="job-role role-comm">Koordinator TIPE</div>
+        <div class="btn-view-proof" onclick="openModal('tipe-modal')">
+          <span>Klik for Detail</span>
+          <i class="fas fa-info-circle"></i>
+        </div>
+      </div>
+
+      <!-- ITEM 6: BPM FT (Koordinator Acara) -->
+      <div class="bento-item">
+        <div class="card-top-info">
+            <div class="company-logo">
+                <img src="image/logo_bpm-remove.png" alt="BPM FT">
+                </div>
+          <div class="company-details">
+            <h3 class="company-name">BADAN PERWAKILAN MAHASISWA FAKULTAS TEKNIK</h3>
+            <span class="company-period">May 2025 - Jun 2025</span>
+          </div>
+        </div>
+        <div class="job-role role-comm">Koordinator Pelatihan...</div>
+        <div class="btn-view-proof" onclick="openModal('pelatihan-modal')">
+          <span>Klik for Detail</span>
+          <i class="fas fa-info-circle"></i>
+        </div>
+      </div>
+
+      <!-- ITEM 8: PUBLIC SPEAKER -->
+      <div class="bento-item">
+        <div class="card-top-info">
+          <div class="company-logo">
+            <img src="image/hima sipil.jpeg" alt="hima sipil">
+          </div>
+          <div class="company-details">
+            <h3 class="company-name">PUBLIC SPEAKER & PRESENTER</h3>
+            <span class="company-period">Nov 2025</span>
+          </div>
+        </div>
+        <!-- Menggunakan class role-comm untuk warna hijau/teal, atau sesuaikan sendiri -->
+        <div class="job-role role-comm">Speaker / Seminar</div>
+        <div class="btn-view-proof" onclick="openModal('public-speaker-modal')">
+          <span>Klik for Detail</span>
+          <i class="fas fa-info-circle"></i>
+        </div>
+      </div>
+
+<!-- ITEM 7: KPM UNJ -->
+      <div class="bento-item">
+        <div class="card-top-info">
+          <div class="company-logo">
+            <img src="image/kpm unj.png" alt="KPM UNJ">
+          </div>
+          <div class="company-details">
+            <h3 class="company-name">KELOMPOK PENELITI MUDA</h3>
+            <span class="company-period">Nov 2024 - Present</span>
+          </div>
+        </div>
+        <div class="job-role role-org-research">Staff Active</div>
+        <div class="btn-view-proof" onclick="openModal('kpm-modal')">
+          <span>Klik for Detail</span>
+          <i class="fas fa-info-circle"></i>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+    KUMPULAN MODAL POPUP DETAIL (SEMUA PENGALAMAN)
+   ========================================================= -->
+
+   <!-- MODAL 1: PT SUMI ASIH -->
+<div id="sumi-modal" class="modal-overlay" onclick="closeModal('sumi-modal')">
+    <div class="modal-content" onclick="event.stopPropagation()">
+        <button class="modal-close-btn" onclick="closeModal('sumi-modal')">&times;</button>
+        <div class="modal-body">
+            <h2>PT. SUMI ASIH</h2>
+            <span class="modal-sub">Technical Support Maintenance (AUG 2026 - Present)</span>
+            <div class="modal-desc">
+              <p>During my internship as a Technical Support Maintenance intern at PT Sumi Asih, I was directly involved in the maintenance and repair of industrial equipment under the guidance of technicians. 
+                In terms of preventive maintenance, I performed upkeep on industrial pumps and conducted routine equipment inspections to ensure the machinery remained reliable and to prevent breakdowns. 
+                Regarding corrective maintenance, I carried out the replacement of pump components such as bearings, mechanical seals, and couplings following the technicians' instructions, 
+                which provided me with an understanding of the entire repair process, from identifying faults to reassembly.
+                I also assisted with compressor repairs, which included installing components, assembling pistons, 
+                and verifying the condition of the machinery following the repairs.
+                I also gained experience in repairing a shaping machine that had sustained internal damage specifically, a broken pin. 
+                Since the damage was not visible from the outside, my team and I began by removing the upper section (the head) of the machine 
+                to directly identify the broken component. We also inspected the surrounding parts—including the shaft, connecting rod, and internal gears 
+                to ensure there was no secondary damage, such as wear or other irregularities that could lead to recurring failures. 
+                Throughout this process, I participated in the disassembly, inspection, and reassembly of the machine alongside my team members. 
+                This experience helped me develop skills in troubleshooting, teamwork, and communication, as well as the application of safe operating procedures when dismantling machine tools.
+                During my internship, I was assigned a mini-project involving the reverse engineering of a valve cap. The process began with measuring the original component using a caliper, 
+                followed by redesigning it in Autodesk Inventor to match the original dimensions. Once the design was finalized, I manufactured the component on a lathe using stainless steel. 
+                This project integrated skills in measurement, 3D modeling, technical drawing interpretation, and machining, while also requiring a high level of precision 
+                to ensure the final product met the specifications of the original component.</p>
+            </div>      
+             <h3 class="modal-gallery-title">Dokumentasi Kegiatan</h3>
+            <div class="modal-gallery">
+                <div class="gallery-item"><img src="image/intern 1.jpeg" alt="Dokumentasi 1"></div>
+                <div class="gallery-item"><img src="image/intern 2.jpeg" alt="Dokumentasi 2"></div>
+                <div class="gallery-item"><img src="image/intern 3.jpeg" alt="Dokumentasi 3"></div>
+                <div class="gallery-item"><img src="image/intern 7.jpeg" alt="Dokumentasi 4"></div>
+                 <div class="gallery-item"><img src="image/intern 8.png" alt="Dokumentasi 4"></div>
+                <div class="gallery-item"><img src="image/intern 4.jpeg" alt="Dokumentasi 4"></div>
+                <div class="gallery-item"><img src="image/intern 5.jpeg" alt="Dokumentasi 4"></div>
+                <div class="gallery-item"><img src="image/intern 6.jpeg" alt="Dokumentasi 4"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- MODAL 1: PT EMER INOVASI TEKNOLOGI -->
+<div id="emer-modal" class="modal-overlay" onclick="closeModal('emer-modal')">
+    <div class="modal-content" onclick="event.stopPropagation()">
+        <button class="modal-close-btn" onclick="closeModal('emer-modal')">&times;</button>
+        <div class="modal-body">
+            <h2>PT EMER INOVASI TEKNOLOGI</h2>
+            <span class="modal-sub">Video Editor Intern (Feb 2026 - Mar 2026)</span>
+            <div class="modal-desc">
+                <p>During my internship, I was fully responsible for producing and editing 3–5 short-form videos daily for TikTok using CapCut, 
+                utilizing footage provided by the team to promote facial wash products. 
+                I implemented a strong storytelling marketing approach—crafting engaging hooks, defining problems, 
+                presenting the product as the solution, and incorporating effective Calls-to-Action (CTA)
+                while also writing creative captions and optimizing product tagging features to drive sales conversions. 
+                Beyond production, I actively evaluated and analyzed post-upload performance data to 
+                continuously improve content quality and relevance. 
+                Through a deep understanding of TikTok-based digital marketing workflows and affiliate systems, 
+                this strategy successfully contributed to the brand's account performance, 
+                achieving an increase of ±13.9K total views, 83 likes, and 59 shares during my tenure.</p>
+        
+            </div>
+            <h3 class="modal-gallery-title">Dokumentasi Kegiatan</h3>
+            <div class="modal-gallery">
+                <div class="gallery-item"><img src="image/statistik 1 emer.png" alt="Dokumentasi 1"></div>
+                <div class="gallery-item"><img src="image/statistik 2 emer.png" alt="Dokumentasi 2"></div>
+                <div class="gallery-item"><img src="image/statistik3 emer.png" alt="Dokumentasi 3"></div>
+                <div class="gallery-item"><img src="image/sertfikat emer.png" alt="Dokumentasi 4"></div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MODAL 3: BPM FT (Ketua Badan Kaderisasi) -->
+<div id="bpm-kaderisasi-modal" class="modal-overlay" onclick="closeModal('bpm-kaderisasi-modal')">
+    <div class="modal-content" onclick="event.stopPropagation()">
+        <button class="modal-close-btn" onclick="closeModal('bpm-kaderisasi-modal')">&times;</button>
+        <div class="modal-body">
+            <h2>BADAN PERWAKILAN MAHASISWA FT</h2>
+            <span class="modal-sub">Ketua Badan Kaderisasi (Feb 2025 - Feb 2026)</span>
+            <div class="modal-desc">
+                <p>During my second term at the Engineering Faculty Student Representative Council (BPM FT), 
+                I was entrusted to lead and collaborate with a 7-member team in planning and executing 5 strategic work programs. 
+                This included seminars and flagship initiatives such as the Student Legislative Training and the Youth Creative Legislative program. 
+                These flagship programs were specifically designed to serve as a platform for participants to develop soft skills, 
+                simulating plenary sessions, presenting assessments, and mastering comprehensive work program evaluation methodologies. 
+                Throughout my tenure, I actively coordinated every phase of the agenda, monitored and mitigated potential field obstacles, 
+                and ensured the optimal capacity building and adaptability of each team member. Through structured leadership management, 
+                all work programs were successfully completed, exceeding the designated Key Performance Indicators (KPIs) by approximately 78%.</p>
+            </div>
+            <h3 class="modal-gallery-title">Dokumentasi Kegiatan</h3>
+            <div class="modal-gallery">
+                <div class="gallery-item"><img src="image/bpm kader 2.JPG" alt="Dokumentasi 1"></div>
+                <div class="gallery-item"><img src="image/bpm kader 1.JPG" alt="Dokumentasi 2"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MODAL 4: BPM FT (Staff Komisi Pengawasan) -->
+<div id="bpm-staff-modal" class="modal-overlay" onclick="closeModal('bpm-staff-modal')">
+    <div class="modal-content" onclick="event.stopPropagation()">
+        <button class="modal-close-btn" onclick="closeModal('bpm-staff-modal')">&times;</button>
+        <div class="modal-body">
+            <h2>BADAN PERWAKILAN MAHASISWA FT</h2>
+            <span class="modal-sub">Staff Komisi Pengawasan (Januari 2024 - Feb 2026)</span>
+            <div class="modal-desc">
+                <p>As a Staff of Commission 1 for Oversight, I was fully responsible for executing internal control, auditing, and organizational administrative governance functions. 
+                In this role, I successfully designed a systematic oversight mechanism for reviewing proposals and Accountability Reports (LPJ) from the Student Executive Board (BEM). 
+                Through a structured approach and efficient time management, I conducted comprehensive document audits within a fast turnaround time of 3 to 4 working days per document. 
+                To enhance operational efficiency, I initiated archive digitalization by integrating all administrative documents into a centralized Google Drive storage system, significantly streamlining future tracking and auditing processes. 
+                This strategic contribution substantially elevated BEM’s administrative compliance with Standard Operating Procedures (SOPs) and approved assessments, successfully driving key performance indicators to over 78%.</p>
+            </div>
+            <h3 class="modal-gallery-title">Dokumentasi Kegiatan</h3>
+            <div class="modal-gallery">
+                <div class="gallery-item"><img src="image/komisi 1(1).JPG" alt="Dokumentasi 1"></div>
+                <div class="gallery-item"><img src="image/komisi 1(2).JPG" alt="Dokumentasi 2"></div>
+                <div class="gallery-item"><img src="image/komisi 1(3).JPG" alt="Dokumentasi 2"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MODAL 5: KPM UNJ -->
+<div id="kpm-modal" class="modal-overlay" onclick="closeModal('kpm-modal')">
+    <div class="modal-content" onclick="event.stopPropagation()">
+        <button class="modal-close-btn" onclick="closeModal('kpm-modal')">&times;</button>
+        <div class="modal-body">
+            <h2>KELOMPOK PENELITI MUDA (KPM UNJ)</h2>
+            <span class="modal-sub">Staff Active (Nov 2024 - Present)</span>
+            <div class="modal-desc">
+                <p>Aktif berkontribusi dalam pengembangan iklim ilmiah, riset, dan penalaran mahasiswa tingkat universitas:</p>
+                <ul>
+                    <li>Mengikuti pelatihan metodologi penelitian kuantitatif maupun kualitatif secara intensif.</li>
+                    <li>Saling berkolaborasi merumuskan draf proposal karya tulis ilmiah berbasis solusi teknologi industri.</li>
+                </ul>
+            </div>
+            <h3 class="modal-gallery-title">Dokumentasi Kegiatan</h3>
+            <div class="modal-gallery">
+                <div class="gallery-item"><img src="image/kpm1.jpg" alt="Dokumentasi 1"></div>
+                <div class="gallery-item"><img src="image/kpm2.jpg" alt="Dokumentasi 2"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MODAL 6: BPM FT (Koordinator TIPE) -->
+<div id="tipe-modal" class="modal-overlay" onclick="closeModal('tipe-modal')">
+    <div class="modal-content" onclick="event.stopPropagation()">
+        <button class="modal-close-btn" onclick="closeModal('tipe-modal')">&times;</button>
+        <div class="modal-body">
+            <h2>BADAN PERWAKILAN MAHASISWA FT</h2>
+            <span class="modal-sub">Koordinator TIPE (Jul 2025 - Aug 2025)</span>
+            <div class="modal-desc">
+                <p>As the Coordinator of the Supervision and Evaluation Committee (TIPE) for the Engineering Faculty Student Orientation, 
+                    I led, coordinated, and directed a cross-functional team of over 45 committee members distributed across 6 operational divisions. 
+                    In this strategic role, I held full responsibility for the oversight, evaluation, and standardization of all event activities 
+                    to ensure absolute compliance with established regulations and Memorandums of Understanding (MoU). 
+                    Additionally, I managed the quality assurance and safety monitoring systems for over 1,800 incoming freshman students throughout the entire event series. 
+                    Utilizing adaptive two-way communication, I successfully fostered strong synergies with cross-faculty coordinators and organizers to align field evaluation outcomes. 
+                    Amidst a highly dynamic environment, I demonstrated the ability to make swift, calculated tactical decisions, 
+                    including the strategic rotation and repositioning of committee members to ensure operational continuity and event management efficiency. </p>
+            </div>
+            <h3 class="modal-gallery-title">Dokumentasi Kegiatan</h3>
+            <div class="modal-gallery">
+                <div class="gallery-item"><img src="image/dokum 1.JPG" alt="Dokumentasi 1"></div>
+                <div class="gallery-item"><img src="image/dokum 2.JPG" alt="Dokumentasi 2"></div>
+                <div class="gallery-item"><img src="image/Sertifikat Tipe.jpg" alt="Dokumentasi 2"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MODAL 7: BPM FT (Koordinator Acara Pelatihan Legislatif) -->
+<div id="pelatihan-modal" class="modal-overlay" onclick="closeModal('pelatihan-modal')">
+    <div class="modal-content" onclick="event.stopPropagation()">
+        <button class="modal-close-btn" onclick="closeModal('pelatihan-modal')">&times;</button>
+        <div class="modal-body">
+            <h2>BADAN PERWAKILAN MAHASISWA FT</h2>
+            <span class="modal-sub">Koordinator Acara Pelatihan Legislatif Mahasiswa FT x FIP (May 2025 - Jun 2025)</span>
+            <div class="modal-desc">
+                <p>As Event Coordinator for a cross-faculty legislative training, I managed the end-to-end operational planning and execution for 150 participants. 
+                Applied structured engineering-management principles to lead cross-functional team meetings, develop comprehensive Terms of Reference (ToR), 
+                and design optimized event timelines. By implementing an interactive and process-driven approach, I successfully boosted participant engagement to 89% and 
+                delivered the project with an 88% execution success rate on a strict timeline.</p>  
+            </div>
+            <h3 class="modal-gallery-title">Dokumentasi Kegiatan</h3>
+            <div class="modal-gallery">
+                <div class="gallery-item"><img src="image/plmf 1.JPG" alt="Dokumentasi 1"></div>
+                <div class="gallery-item"><img src="image/plmf 2.JPG" alt="Dokumentasi 2"></div>
+                <div class="gallery-item"><img src="image/SERTIF PANITIA PLMF.png" alt="Dokumentasi 2"></div>
+                <div class="gallery-item"><img src="image/plmf 3.JPG" alt="Dokumentasi 2"></div>
+                <div class="gallery-item"><img src="image/plmf 4.JPG" alt="Dokumentasi 2"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- MODAL 8: PUBLIC SPEAKER -->
+<div id="public-speaker-modal" class="modal-overlay" onclick="closeModal('public-speaker-modal')">
+    <div class="modal-content" onclick="event.stopPropagation()">
+        <button class="modal-close-btn" onclick="closeModal('public-speaker-modal')">&times;</button>
+        <div class="modal-body">
+            <h2>PUBLIC SPEAKER & NARASUMBER</h2>
+            <span class="modal-sub">Pembicara Talkshow (Oktober 2024)</span>
+            <div class="modal-desc">
+                <p>As an active leader in student organizations, I possess proven experience in public speaking and strategic communication. 
+                In October 2025, I was appointed as a talk show speaker at the Civil Engineering Freshmen Leadership Training. 
+                Presenting a topic titled 'Harmonizing the Synergy Between Legislative and Executive Bodies', 
+                I shared insights from a legislative perspective with an audience of over 150 freshmen. Through an interactive and dynamic session, 
+                I successfully educated the audience on the urgency of collaboration, effective communication management, 
+                and productive inter-organizational cooperation among student higher institutions.
+            </div>
+            <h3 class="modal-gallery-title">Dokumentasi Kegiatan</h3>
+            <div class="modal-gallery">
+                <!-- Ganti nama file di bawah ini sesuai dengan foto dokumentasi Anda saat berbicara -->
+                <div class="gallery-item"><img src="image/pemateri 6.JPG" alt="Dokumentasi Speaker 1"></div>
+                <div class="gallery-item"><img src="image/pemateri 2.JPG" alt="Dokumentasi Speaker 2"></div>
+                <div class="gallery-item"><img src="image/pemateri 3.JPG" alt="Dokumentasi Speaker 2"></div>
+                <div class="gallery-item"><img src="image/pemateri 5.JPG" alt="Dokumentasi Speaker 2"></div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+      <section id="projects">
+      <div class="experience-wrapper container">
+        <h1 class="section-title">MANUFACTURING & DESIGN PROJECTS</h1>
+        <div class="projects-custom-grid">
+
+          <div class="project-custom-card">
+            <div class="card-top-content-flex">
+              <div class="project-logo-left">
+                <img src="image-project/logo unj.png" alt="UNJ Logo" onerror="this.src='image project/3D mandril.png'">
+              </div>
+              <div class="card-text-wrapper">
+                <h3 class="project-custom-title">Design & Fabrikasi Manufaktur Mandril Bertingkat</h3>
+                <span class="project-custom-subtitle"><strong>Machine Tools Practice Lathe | Design Engineer</strong></span>
+              </div>
+            </div>
+            
+            <button class="btn-detail-full" onclick="openModal('proj-mandrel-modal')">
+              Klik for Detail
+            </button>
+          </div>
+
+          <div class="project-custom-card">
+            <div class="card-top-content-flex">
+              <div class="project-logo-left">
+                <img src="image-project/logo unj.png" alt="UNJ Logo">
+              </div>
+              <div class="card-text-wrapper">
+                <h3 class="project-custom-title">CAD/CAM CNC Toolpath Manufacturing Project</h3>
+                <span class="project-custom-subtitle"><strong>Autodesk Inventor CAM Programming for CNC Router | CNC Practicum | Autodesk Inventor</strong></span>
+              </div>
+            </div>
+            
+            <button class="btn-detail-full" onclick="openModal('proj-cnc-modal')">
+              Klik for Detail
+            </button>
+          </div>
+
+          <div class="project-custom-card">
+            <div class="card-top-content-flex">
+              <div class="project-logo-left">
+                <img src="image-project/logo unj.png" alt="UNJ Logo">
+              </div>
+              <div class="card-text-wrapper">
+                <h3 class="project-custom-title">Design prototype Conveyor Smart System and Fabrication</h3>
+                <span class="project-custom-subtitle"><strong>Mechanical Design | Manufacturing | Electrical | Assembly</strong></span>
+              </div>
+            </div>
+            
+            <button class="btn-detail-full" onclick="openModal('proj-press-modal')">
+              Klik for Detail
+            </button>
+          </div>
+
+          <div class="project-custom-card">
+            <div class="card-top-content-flex">
+              <div class="project-logo-left">
+                <img src="image-project/logo unj.png" alt="UNJ Logo">
+              </div>
+              <div class="card-text-wrapper">
+                <h3 class="project-custom-title">Vertical Milling Machine Miniature</h3>
+                <span class="project-custom-subtitle"><strong>Mechanical Design | 3D Printing | Assembly</strong></span>
+              </div>
+            </div>
+            
+            <button class="btn-detail-full" onclick="openModal('proj-router-modal')">
+              Klik for Detail
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. Container tempat memuat Project Kreatif (Taruh di Luar Wrapper Manufaktur) -->
+  <div id="creative-project-container"></div>
+  <div class="experience-wrapper container">
+    </section>
+
+    <div id="proj-mandrel-modal" class="modal-overlay" onclick="closeModal('proj-mandrel-modal')">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <button class="modal-close-btn" onclick="closeModal('proj-mandrel-modal')">&times;</button>
+            <div class="modal-body">
+                <h2>DESAIN & MANUFAKTUR POROS MANDRiL</h2>
+                <span class="modal-sub">Design Engineer / CAD & Lathe Operation</span>
+                <div class="modal-desc">
+                    <p>his project is part of the Machine Tools Practice course, aimed at manufacturing a mechanical component, 
+                      specifically a Stepped Mandrel with an External Thread, using a conventional lathe machine.
+                      Through this project, the entire manufacturing process was executed independently, 
+                      spanning from engineering drawing analysis and cutting parameter determination to metal cutting operations 
+                      and final inspection, to produce a high-precision component that meets industrial geometric tolerance standards.  
+                      During the machining process, several turning methods were applied, including facing, step turning, chamfering, 
+                      and external threading utilizing an indexable carbide insert tool. The practice demanded a high level of precision in controlling parameters 
+                      such as depth of cut and cutting speed, while strictly adhering to Occupational Health and Safety (K3) protocols to ensure a safe working environment</p>
+                </div>
+                <h3 class="modal-gallery-title">Dokumentasi Projek</h3>
+                   <div class="modal-gallery">
+                      <div class="gallery-item"><img src="image-project/3D mandril.png" alt="Dokumentasi 1"></div>
+                      <div class="gallery-item"><img src="image-project/mandril 1.jpeg" alt="Dokumentasi 2"></div>
+                      <div class="gallery-item"><img src="image-project/mandril 2.jpeg" alt="Dokumentasi 3"></div>
+                      <div class="gallery-item"><img src="image-project/mandril 3.jpeg" alt="Dokumentasi 4"></div>
+                     
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="proj-cnc-modal" class="modal-overlay" onclick="closeModal('proj-cnc-modal')">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <button class="modal-close-btn" onclick="closeModal('proj-cnc-modal')">&times;</button>
+            <div class="modal-body">
+                <h2>CAD/CAM CNC MACHINING DESIGN and SIMULATION</h2>
+                <span class="modal-sub">Manufacturing / CNC Programmer </span>
+                <div class="modal-desc">
+                    <p>This project was executed as part of the Final Semester Examination (UAS) for the Machine Tools Practice course, 
+                      focusing on the seamless integration of CAD (Computer-Aided Design) and CAM (Computer-Aided Manufacturing) workflows within Autodesk Inventor. 
+                      The entire workflow was performed independently, beginning with the 3D CAD modeling of a solid block plaque featuring 
+                      a customized embossed text relief representing the student's name and identification number "CHAN 1526423034". 
+                      Following the design phase, the process transitioned into the CAM configuration stage, where the machining setup was established, 
+                      the Work Coordinate System (WCS) was defined along the X, Y, and Z axes, 
+                      and a high-efficiency 2D Adaptive Clearing toolpath strategy was applied using an End Mill cutter. 
+                      This dynamic roughing strategy was specifically selected to rapidly clear surrounding 
+                      material while maintaining a constant tool load, thereby reducing cycle times and preventing premature tool wear. 
+                      The workflow concluded with a comprehensive visual toolpath simulation to verify all machining movements 
+                      and detect any potential tool or spindle collisions before G-code generation. Although the physically machined part was directly submitted for academic evaluation, the virtual model and toolpaths were fully verified to be 100% precise and production-ready.</p>
+                      <h3 class="modal-gallery-title">Dokumentasi Projek</h3>
+                   <div class="modal-gallery">
+                      <div class="gallery-item"><img src="image-project/CNC router.png" alt="Dokumentasi 1"></div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="proj-press-modal" class="modal-overlay" onclick="closeModal('proj-press-modal')">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <button class="modal-close-btn" onclick="closeModal('proj-press-modal')">&times;</button>
+            <div class="modal-body">
+                <h2>ARDUINO BASED SMART CONVEYOR SYSTEM </h2>
+                <span class="modal-sub">Production Line Automation: Development of a Smart Conveyor System Prototype</span>
+                <div class="modal-desc">
+                    <p>Executed within a 4-member project team for the Production Machinery Manufacturing course, 
+                      this engineering initiative focused on designing and manufacturing an automated conveyor system engineered 
+                      to streamline real-time object logging workflows. The project lifecycle initiated with my role as the lead mechanical designer, 
+                      where I took full responsibility for the 3D CAD modeling using Autodesk Inventor, analyzing material capacities, 
+                      and establishing critical tolerances for motor and sensor placements. During the physical fabrication phase, 
+                      I actively contributed to hands-on structural development, performing SMAW (Shielded Metal Arc Welding) operations 
+                      for the main frame and precision drilling for frame fasteners. In the final automation phase, 
+                      I collaborated closely with a team member to execute complex wiring and develop control algorithms within the Arduino IDE. 
+                      The finalized system successfully leveraged an Arduino ESP32 microcontroller interfaced with an ultrasonic sensor for object detection, 
+                      alongside a DC motor regulated by an L298N driver for stable belt movement, demonstrating my strong capability in unifying mechanical 
+                      fabrication with advanced industrial automation.</p>
+
+                      <h3 class="modal-gallery-title">Dokumentasi Projek</h3>
+                   <div class="modal-gallery">
+                      <div class="gallery-item"><img src="image-project/3d conveyor.png" alt="Dokumentasi 1"></div>
+                      <div class="gallery-item"><img src="image-project/2d 1.png" alt="Dokumentasi 1"></div>
+                      <div class="gallery-item"><img src="image-project/2d 3.png" alt="Dokumentasi 1"></div>
+                      <div class="gallery-item"><img src="image-project/2d 2.png" alt="Dokumentasi 1"></div>
+                      <div class="gallery-item"><img src="image-project/conveyor 1.jpeg" alt="Dokumentasi 1"></div>
+                      <div class="gallery-item"><img src="image-project/conveyor 3.jpeg" alt="Dokumentasi 1"></div>
+                      <div class="gallery-item"><img src="image-project/conveyor 4.jpeg" alt="Dokumentasi 1"></div>
+                      <div class="gallery-item"><img src="image-project/conveyor 6.jpeg" alt="Dokumentasi 1"></div>
+                      <div class="gallery-item"><img src="image-project/conveyor 7.jpeg" alt="Dokumentasi 1"></div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="proj-router-modal" class="modal-overlay" onclick="closeModal('proj-router-modal')">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <button class="modal-close-btn" onclick="closeModal('proj-router-modal')">&times;</button>
+            <div class="modal-body">
+                <h2>MINIATURE PROTOTYPE OF VERTICAL MILLING MACHINE</h2>
+                <span class="modal-sub">Development of a Vertical Milling Machine Prototype via CAD and 3D Printing</span>
+                <div class="modal-desc">
+                    <p>As the final project of the Computer-Aided Design (CAD) course, this project focused on the design and fabrication of a miniature vertical milling machine
+                      using 3D printing technology. In my group, as a mechanical designer, I led the initial product development cycle, mechanical conceptualization, 
+                      and 3D CAD modeling from scratch for critical components, including the Spindle Rafting, Bed Vise (work table), bed mount, and main column assembly. 
+                      I fostered collaboration with team members through critical dimensioning and created comprehensive 2D engineering drawings showcasing tolerances. 
+                      To optimize production feasibility, I actively integrated Design for Manufacturing and Assembly (DFMA) principles into the slide guide and T-slot mechanics, 
+                      effectively mitigating the risk of material shrinkage during the 3D printing process. The project concluded with a 100% success rate; 
+                      the completed components demonstrated high dimensional accuracy and achieved seamless locking functionality after assembly, 
+                      demonstrating my strong skills in spatial visualization, engineering documentation, and bridging digital design with physical manufacturing.</p>
+                </div>
+                <h3 class="modal-gallery-title">Dokumentasi Projek</h3>
+                   <div class="modal-gallery">
+                   <div class="gallery-item"><img src="image-project/frais 1.jpeg" alt="Dokumentasi 1"></div>
+                   <div class="gallery-item"><img src="image-project/frais 2.jpeg" alt="Dokumentasi 1"></div>
+                   <div class="gallery-item"><img src="image-project/frais 3d 1.png" alt="Dokumentasi 1"></div>
+                   <div class="gallery-item"><img src="image-project/frais 3d 2.png" alt="Dokumentasi 1"></div>
+                   <div class="gallery-item"><img src="image-project/frais 3d 3.png" alt="Dokumentasi 1"></div>
+                   <div class="gallery-item"><img src="image-project/frais 3d 4.png" alt="Dokumentasi 1"></div>
+                   </div>
+            </div>
+        </div>
+    </div>
+
+<!-- SECTION SKILLS -->
+    <section id="skills">
+        </div>
+    </section>
+
+    <!-- SCRIPT (Di dalam body, paling bawah) -->
+    <script src="js/data-skills.js"></script>
+
+<section id="contact" class="hidden">
+<div class="contact-box container">
+    <h1>Contact</h1>
+    <p>Email: sembiringchandra6@gmail.com</p>
+</div>
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>
